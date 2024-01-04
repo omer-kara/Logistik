@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="14.447" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Kayit Sayfasi" name="Kullanici bilgileri girerek kaydolur" time="14.237">
+<system-out><![CDATA[
+Given Kullanici login assassinate gider.....................................passed
+When Kullanici Registrierung butona tiklar..................................passed
+And Kullanici Benutzer Name box a giris yapar...............................passed
+And Kullanici Telefonnummer box a giris yapar...............................passed
+And Kullanici Email Box a giris yapar.......................................passed
+And Kullanici Password Box agiris yapar.....................................passed
+And Kullanici AGB checkbox a tiklar.........................................passed
+And Kullanici Datenschutzbestimmungen checkbox a tiklar.....................passed
+And Kullanici Senden button a tiklar........................................passed
+And Kullanici Login sayfasinda gecerli Email i doldurur.....................passed
+And Kullanici Login sayfasinda gecerli Password u doldurur..................passed
+And Kullanici Anmelden butonuna tiklar......................................passed
+Then Kullanici Logistik Projesine Hosgeldiniz gorur.........................passed
+]]></system-out>
+</testcase>
+</testsuite>
