@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.security.SecureRandom;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -51,7 +53,7 @@ public class ReuseableMethods {
     }
 
     //istenilen uzunlukta bir şifre üret
-    public static String generatePassword(int length) {
+    public static String generatetPassword(int length) {
         Faker faker = new Faker();
         String password = faker.regexify("[A-Za-z0-9]{" + length + "}");
         return password;
@@ -114,9 +116,9 @@ public class ReuseableMethods {
 
     public static String phoneNumberUret() {
 
-     String phoneNumber=   faker.instance().number().numberBetween(300, 899)
-                + "-" + faker.instance().number().numberBetween(100, 999)
-                + "-" + faker.instance().number().numberBetween(1000, 9999);
+     String phoneNumber=   "+49" + faker.instance().number().numberBetween(300, 899)
+                +  faker.instance().number().numberBetween(100, 999)
+                +  faker.instance().number().numberBetween(1000, 9999);
         return phoneNumber;
     }
 
@@ -136,8 +138,79 @@ public class ReuseableMethods {
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    //Password olusturan kod
+    public class SifreOlusturucu {
 
+        public static String generatePassword(int uzunluk) {
+            String harfler = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            String rakamlar = "0123456789";
+            String ozelKarakter = "!@#$%^&*()-_=+";
 
+            SecureRandom random = new SecureRandom();
+            StringBuilder sifre = new StringBuilder();
+
+            // En az bir büyük harf
+            sifre.append(harfler.charAt(random.nextInt(26) + 26));
+
+            // En az bir küçük harf
+            sifre.append(harfler.charAt(random.nextInt(26)));
+
+            // En az bir rakam
+            sifre.append(rakamlar.charAt(random.nextInt(10)));
+
+            // Bir tane özel karakter
+            sifre.append(ozelKarakter.charAt(random.nextInt(ozelKarakter.length())));
+
+            // Geri kalan karakterler
+            for (int i = 4; i < uzunluk; i++) {
+                String karakterGrubu = harfler + rakamlar + ozelKarakter;
+                sifre.append(karakterGrubu.charAt(random.nextInt(karakterGrubu.length())));
+            }
+
+            // Şifreyi karıştır
+            char[] sifreDizi = sifre.toString().toCharArray();
+            for (int i = 0; i < sifreDizi.length; i++) {
+                int rastgeleIndex = random.nextInt(sifreDizi.length);
+                char temp = sifreDizi[i];
+                sifreDizi[i] = sifreDizi[rastgeleIndex];
+                sifreDizi[rastgeleIndex] = temp;
+            }
+
+            return new String(sifreDizi);
+        }
+    }
+/*
+    //Telefon numarasi girici
+    public class TelefonNumarasiDuzenleyici {
+
+        public static void main(String[] args) {
+            String telefonNumarasi = faker.phoneNumber().phoneNumber(); // Telefon numarasını buraya girin
+
+            String duzenlenmisNumara = duzenleTelefonNumarasi(telefonNumarasi);
+            System.out.println("Düzenlenmiş Telefon Numarası: " + duzenlenmisNumara);
+        }
+
+        public static String duzenleTelefonNumarasi(String numara) {
+            // Telefon numarası 0 ile başlamıyorsa veya +49 ile başlamıyorsa düzenle
+            if (!numara.startsWith("0") && !numara.startsWith("+49")) {
+                if (!numara.startsWith("+")) {
+                    // Eğer + ile başlamıyorsa, + ekleyerek düzenle
+                    numara = "+" + numara;
+                } else {
+                    // Eğer + ile başlıyorsa, +49 ekleyerek düzenle
+                    numara = "+49" + numara.substring(1);
+                }
+            } else if (numara.startsWith("0")) {
+                // Eğer 0 ile başlıyorsa, 0 ekleyerek düzenle
+                numara = "0" + numara;
+            }
+
+            return numara;
+
+        }
+    }
+
+ */
 
 
 }
