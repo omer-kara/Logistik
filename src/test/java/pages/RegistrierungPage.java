@@ -35,5 +35,23 @@ public class RegistrierungPage {
     @FindBy (xpath = "//*[@class='btn btn-primary btn-lg']")
     public WebElement sendenButton;
 
+    @FindBy(xpath = "//span[@id='email']")
+    public WebElement fakemailadresi;
+    @FindBy(xpath = "(//div/button/p)[1]")
+    public WebElement fakeemailcookies;
+
+    @FindBy (xpath = "//iframe[@id='c24-uli-iframe'] ")
+    public WebElement iframe_emailbox;
+
+    @FindBy (xpath = "(//*[@type='email'])[1]")
+    public WebElement email_box;
+
+    @FindBy (id="password")
+    public WebElement password_box;
+
+    @FindBy (xpath = "//*[text()='ANMELDEN']")
+    public WebElement anmeldenButton;
+
+
 
 }
