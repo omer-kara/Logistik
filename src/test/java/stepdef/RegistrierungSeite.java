@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import org.junit.Assert;
 import org.openqa.selenium.WindowType;
 import pages.RegistrierungPage;
 import utilities.ConfigReader;
@@ -15,7 +14,7 @@ import static utilities.ReuseableMethods.*;
 import static utilities.ReuseableMethods.SifreOlusturucu.generatePassword;
 
 
-public class RegistrierungSeiteÖmer {
+public class RegistrierungSeite {
     RegistrierungPage registrierungPage = new RegistrierungPage();
     Faker faker =new Faker();
     String zonehanndle;
@@ -26,11 +25,11 @@ public class RegistrierungSeiteÖmer {
     String pass;
 
 
-    @Given("Kullanici login sayfasina gider")
+  /*  @Given("Kullanici login sayfasina gider")
     public void kullanici_login_sayfasina_gider() {
-        Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
+       // Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
     }
-
+*/
     @When("Kullanici Registrierung butona tiklar")
     public void kullanici_registrierung_butona_tiklar() throws InterruptedException {
 
@@ -140,8 +139,4 @@ public class RegistrierungSeiteÖmer {
     }
 
 
-    @Given("Kullanici login assassinate gider")
-    public void kullaniciLoginAssassinateGider() {
-        Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
-    }
 }
