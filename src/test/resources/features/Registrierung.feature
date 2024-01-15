@@ -2,7 +2,7 @@
 Feature: Kayit Sayfasi
 
   Scenario: Kullanici bilgileri girerek kaydolur
-    Given Kullanici login assassinate gider
+    Given Kullanici login sayfasina gider
     When Kullanici Registrierung butona tiklar
     And Kullanici Benutzer Name box a giris yapar
     And Kullanici Telefonnummer box a giris yapar

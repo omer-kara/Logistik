@@ -5,7 +5,7 @@ Background: Siteye Giris
   And Kullanici admin olarak gecerli bir sifre girer
   And Kullanici Anmelden butonuna tiklar
 
-  Scenario: Fahrtype Regulärfahrt secimi
+  Scenario: Leistung sayfasi
     Given Kullanici sol pencereden Leistung tiklar
     And Kullanici Leistungsübersicht basligini görür
     And Kullanici Fahrtype olarak Sonderfahrt secer
