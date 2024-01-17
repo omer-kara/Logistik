@@ -1,36 +1,58 @@
 package stepdef;
 
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.Select;
 import pages.CarWashPage;
 import pages.RegistrierungPage;
+import utilities.ReuseableMethods;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class CarWashSeite {
 
     CarWashPage carWashPage=new CarWashPage();
 
+    RegistrierungPage registrierungPage=new RegistrierungPage();
+
+
+
+
     Faker faker =new Faker();
 
-    @Given("Kullanici login sayfasina gider")
-    public void kullanici_login_sayfasina_gider() {
+//    @Given("Kullanici login sayfasina gider")
+//    public void kullanici_login_sayfasina_gider() {
+//
+//
+//
+//
+//    }
+
+    @And("Kullanici Login sayfasinda gecerli Admin Email i doldurur")
+    public void kullaniciLoginSayfasindaGecerliAdminEmailIDoldurur() {
+       registrierungPage.email_box.sendKeys("admin@zone-edv.de");
 
     }
-    @When("Kullanici admin olarak gecerli bir Email girer")
-    public void kullanici_admin_olarak_gecerli_bir_email_girer() {
 
+    @And("Kullanici Login sayfasinda gecerli Admin Password u doldurur")
+    public void kullaniciLoginSayfasindaGecerliAdminPasswordUDoldurur() {
+        registrierungPage.password_box.sendKeys("1");
     }
-    @When("Kullanici admin olarak gecerli bir sifre girer")
-    public void kullanici_admin_olarak_gecerli_bir_sifre_girer() {
 
-    }
+
     @Given("Kullanici sol pencereden Car_Washi tiklar")
     public void kullanici_sol_pencereden_car_washi_tiklar() {
         carWashPage.carWashGiris.click();
+        ReuseableMethods.bekle(2);
+        ReuseableMethods.scrollToElement(carWashPage.notizCarwash);
+
+        ReuseableMethods.bekle(3);
 
     }
 
@@ -38,13 +60,36 @@ public class CarWashSeite {
     @When("Kullanici bir Datum secer")
     public void kullanici_bir_datum_secer() {
 
-        carWashPage.datumCarWash.sendKeys("15.01.2024");
+        carWashPage.datumCarWash.click();
+
+        String currentDate = getCurrentDate();
+        System.out.println("Current Date: " + currentDate);
+        carWashPage.datumCarWash.sendKeys(currentDate);
 
     }
+        public String getCurrentDate() {
+            // Şu anki tarih ve saat bilgisini alma
+            Date now = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+            return dateFormat.format(now);
+
+        }
+
+    public String getCurrentDate1() {
+        // Şu anki tarih ve saat bilgisini alma
+        Date now = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return dateFormat.format(now);
+
+    }
+
     @When("Kullanici Bir Fahrer secer")
     public void kullanici_bir_fahrer_secer() {
 
-        carWashPage.fahrerCarwash.sendKeys("leyla");
+
+        Select select=new Select(carWashPage.fahrerCarwash);
+        select.selectByVisibleText("leyla");
+
 
     }
     @When("Kullanici Kennzeichnen secer")
@@ -82,6 +127,7 @@ public class CarWashSeite {
     @When("Kullanici Zahlungsart radiobuttondan Barzahlung secer")
     public void kullanici_zahlungsart_radiobuttondan_barzahlung_secer() {
         carWashPage.barZahlungCarwash.click();
+        ReuseableMethods.bekle(2);
 
     }
     @When("Kullanici bir Betrag secer")
@@ -99,4 +145,7 @@ public class CarWashSeite {
         carWashPage.submitCarwash.click();
 
     }
+
+
+
 }
