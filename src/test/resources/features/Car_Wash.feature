@@ -1,9 +1,9 @@
 @carwash
 Feature: Car_Wash sayfasi Testi
   Background: Siteye Giris
-    Given Kullanici login sayfasina gider
-    And Kullanici Login sayfasinda gecerli Email i doldurur
-    And Kullanici Login sayfasinda gecerli Password u doldurur
+   Given Kullanici login sayfasina gider
+    And Kullanici Login sayfasinda gecerli Admin Email i doldurur
+    And Kullanici Login sayfasinda gecerli Admin Password u doldurur
     And Kullanici Anmelden butonuna tiklar
 
     Scenario: Car-Wash
