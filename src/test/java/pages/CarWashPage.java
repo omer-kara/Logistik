@@ -6,15 +6,17 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class CarWashPage {
-    //public CarWashPage(){ PageFactory.initElements(Driver.getDriver(),this);}
 
-    @FindBy (xpath = "(//*[@class='list-group-item rounded-2 bg-dark border-0'])[4]")
+   public CarWashPage(){ PageFactory.initElements(Driver.getDriver(),this);}
+
+    @FindBy (xpath = "(//a[@class='nav-link'])[4]")
+
     public WebElement carWashGiris;
 
     @FindBy (id="dbdatum")
     public WebElement datumCarWash;
 
-    @FindBy (id="txtTour")
+    @FindBy (xpath="(//*[@name='fahrer'])")
     public WebElement fahrerCarwash;
 
     @FindBy (id="txtTour")
@@ -37,12 +39,12 @@ public class CarWashPage {
     @FindBy (id="flexRadioDefault3")
     public WebElement keineZahlungCarwash;
 
-    @FindBy (id="txtBetrag")
+    @FindBy (id="pflegebetrag")
     public WebElement betragCarWash;
 
     @FindBy (id="pflegenotiz")
     public WebElement notizCarwash;
 
-    @FindBy (className = "btn btn-primary btn-sm d-block")
+    @FindBy (xpath = "//*[text()='Submit']")
     public WebElement submitCarwash;
 }

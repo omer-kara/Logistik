@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="Cucumber" time="9.25" tests="1" skipped="0" failures="1" errors="0">
 <testcase classname="Car_Wash sayfasi Testi" name="Car-Wash" time="9.076">
 <failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.carWashPage.carWashGiris&quot; is null">
@@ -25,6 +26,28 @@ And Kullanici Zahlungsart radiobuttondan Barzahlung secer...................skip
 And Kullanici bir Betrag secer..............................................skipped
 And Kullanici Notiz yazar...................................................skipped
 And Speichern button atiklar................................................skipped
+=======
+<testsuite name="Cucumber" time="10.975" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Car_Wash sayfasi Testi" name="Car-Wash" time="10.821">
+<system-out><![CDATA[
+Given Kullanici login sayfasina gider.......................................passed
+And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
+And Kullanici Login sayfasinda gecerli Admin Password u doldurur............passed
+And Kullanici Anmelden butonuna tiklar......................................passed
+Given Kullanici sol pencereden Car_Washi tiklar.............................passed
+And Kullanici bir Datum secer...............................................passed
+And Kullanici Bir Fahrer secer..............................................passed
+And Kullanici Kennzeichnen secer............................................passed
+And Reinigung checkbox tan Innenreinigung u secer...........................passed
+And Reinigung checkbox tan Ofenreinigung u secer............................passed
+And Reinigung checkbox tan Außenreinigung u secer...........................passed
+And Kullanici Zahlungsart radiobuttondan keine Zahlung secer................passed
+And Kullanici Zahlungsart radiobuttondan Kartenzahlung secer................passed
+And Kullanici Zahlungsart radiobuttondan Barzahlung secer...................passed
+And Kullanici bir Betrag secer..............................................passed
+And Kullanici Notiz yazar...................................................passed
+And Speichern button atiklar................................................passed
+>>>>>>> master
 ]]></system-out>
 </testcase>
 </testsuite>

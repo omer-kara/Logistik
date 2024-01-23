@@ -25,9 +25,11 @@ public class RegistrierungSeite {
     String pass;
 
 
+
   @Given("Kullanici login sayfasina gider")
     public void kullanici_login_sayfasina_gider() {
        Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
+
     }
 
     @When("Kullanici Registrierung butona tiklar")
