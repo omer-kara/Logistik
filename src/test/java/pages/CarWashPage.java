@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class CarWashPage {
-    public CarWashPage(){ PageFactory.initElements(Driver.getDriver(),this);}
+    //public CarWashPage(){ PageFactory.initElements(Driver.getDriver(),this);}
 
-    @FindBy (xpath = "(//*[@class='fs-6 text-white'])[4]")
+    @FindBy (xpath = "(//*[@class='list-group-item rounded-2 bg-dark border-0'])[4]")
     public WebElement carWashGiris;
 
     @FindBy (id="dbdatum")

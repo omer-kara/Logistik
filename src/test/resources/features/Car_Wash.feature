@@ -2,8 +2,8 @@
 Feature: Car_Wash sayfasi Testi
   Background: Siteye Giris
     Given Kullanici login sayfasina gider
-    And Kullanici Login sayfasinda gecerli Email i doldurur
-    And Kullanici Login sayfasinda gecerli Password u doldurur
+    And Kullanici Login sayfasinda gecerli admin Email i doldurur
+    And Kullanici Login sayfasinda gecerli admin Password u doldurur
     And Kullanici Anmelden butonuna tiklar
 
     Scenario: Car-Wash

@@ -1,11 +1,18 @@
 package stepdef;
 
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import pages.CarWashPage;
 import pages.RegistrierungPage;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -13,30 +20,50 @@ import java.time.format.DateTimeFormatter;
 public class CarWashSeite {
 
     CarWashPage carWashPage=new CarWashPage();
+    RegistrierungPage registrierungPage = new RegistrierungPage();
 
-    Faker faker =new Faker();
+    WebDriver driver = new ChromeDriver();
 
-    @Given("Kullanici login sayfasina gider")
-    public void kullanici_login_sayfasina_gider() {
 
+
+//    @Given("Kullanici login sayfasina gider")
+//    public void kullanici_login_sayfasina_gider() {
+//        Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
+//
+//    }
+//    @When("Kullanici admin olarak gecerli bir Email girer")
+//    public void kullanici_admin_olarak_gecerli_bir_email_girer() {
+//        registrierungPage.email_box.sendKeys("admin@zone-edv.de");
+//
+//
+//    }
+//    @When("Kullanici admin olarak gecerli bir sifre girer")
+//    public void kullanici_admin_olarak_gecerli_bir_sifre_girer() {
+//        registrierungPage.password_box.sendKeys("1");
+//
+//    }
+
+    @And("Kullanici Login sayfasinda gecerli admin Email i doldurur")
+    public void kullaniciLoginSayfasindaGecerliAdminEmailIDoldurur() {
+    registrierungPage.email_box.sendKeys("admin@zone-edv.de");
+
+}
+
+    @And("Kullanici Login sayfasinda gecerli admin Password u doldurur")
+    public void kullaniciLoginSayfasindaGecerliAdminPasswordUDoldurur() {
+        registrierungPage.password_box.sendKeys("1");
     }
-    @When("Kullanici admin olarak gecerli bir Email girer")
-    public void kullanici_admin_olarak_gecerli_bir_email_girer() {
 
-    }
-    @When("Kullanici admin olarak gecerli bir sifre girer")
-    public void kullanici_admin_olarak_gecerli_bir_sifre_girer() {
-
-    }
     @Given("Kullanici sol pencereden Car_Washi tiklar")
-    public void kullanici_sol_pencereden_car_washi_tiklar() {
+    public void kullanici_sol_pencereden_car_washi_tiklar() throws InterruptedException {
+        Thread.sleep(3000);
         carWashPage.carWashGiris.click();
-
     }
 
 
     @When("Kullanici bir Datum secer")
     public void kullanici_bir_datum_secer() {
+
 
         carWashPage.datumCarWash.sendKeys("15.01.2024");
 
@@ -99,4 +126,6 @@ public class CarWashSeite {
         carWashPage.submitCarwash.click();
 
     }
+
+
 }

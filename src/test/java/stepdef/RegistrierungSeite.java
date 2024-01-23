@@ -25,11 +25,11 @@ public class RegistrierungSeite {
     String pass;
 
 
-  /*  @Given("Kullanici login sayfasina gider")
+  @Given("Kullanici login sayfasina gider")
     public void kullanici_login_sayfasina_gider() {
-       // Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
+       Driver.getDriver().get(ConfigReader.getProperty("LieferungUrl"));
     }
-*/
+
     @When("Kullanici Registrierung butona tiklar")
     public void kullanici_registrierung_butona_tiklar() throws InterruptedException {
 
