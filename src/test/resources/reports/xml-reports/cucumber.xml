@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.975" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Car_Wash sayfasi Testi" name="Car-Wash" time="10.821">
+<testsuite name="Cucumber" time="32.86" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Car_Wash sayfasi Testi" name="Car-Wash" time="32.657">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with text: leyla
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: unknown">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: leyla
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at stepdef.CarWashSeite_StepDef.kullanici_bir_fahrer_secer(CarWashSeite_StepDef.java:90)
+	at ✽.Kullanici Bir Fahrer secer(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/Car_Wash.feature:13)
+]]>
+</failure>
 <system-out><![CDATA[
 Given Kullanici login sayfasina gider.......................................passed
 And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
@@ -8,17 +23,17 @@ And Kullanici Login sayfasinda gecerli Admin Password u doldurur............pass
 And Kullanici Anmelden butonuna tiklar......................................passed
 Given Kullanici sol pencereden Car_Washi tiklar.............................passed
 And Kullanici bir Datum secer...............................................passed
-And Kullanici Bir Fahrer secer..............................................passed
-And Kullanici Kennzeichnen secer............................................passed
-And Reinigung checkbox tan Innenreinigung u secer...........................passed
-And Reinigung checkbox tan Ofenreinigung u secer............................passed
-And Reinigung checkbox tan Außenreinigung u secer...........................passed
-And Kullanici Zahlungsart radiobuttondan keine Zahlung secer................passed
-And Kullanici Zahlungsart radiobuttondan Kartenzahlung secer................passed
-And Kullanici Zahlungsart radiobuttondan Barzahlung secer...................passed
-And Kullanici bir Betrag secer..............................................passed
-And Kullanici Notiz yazar...................................................passed
-And Speichern button atiklar................................................passed
+And Kullanici Bir Fahrer secer..............................................failed
+And Kullanici Kennzeichnen secer............................................skipped
+And Reinigung checkbox tan Innenreinigung u secer...........................skipped
+And Reinigung checkbox tan Ofenreinigung u secer............................skipped
+And Reinigung checkbox tan Außenreinigung u secer...........................skipped
+And Kullanici Zahlungsart radiobuttondan keine Zahlung secer................skipped
+And Kullanici Zahlungsart radiobuttondan Kartenzahlung secer................skipped
+And Kullanici Zahlungsart radiobuttondan Barzahlung secer...................skipped
+And Kullanici bir Betrag secer..............................................skipped
+And Kullanici Notiz yazar...................................................skipped
+And Speichern button atiklar................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
