@@ -4,18 +4,15 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 import pages.CarWashPage;
 import pages.RegistrierungPage;
 import utilities.ReuseableMethods;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-public class CarWashSeite {
+public class CarWashSeite_StepDef {
 
     CarWashPage carWashPage=new CarWashPage();
 
@@ -37,12 +34,14 @@ public class CarWashSeite {
     @And("Kullanici Login sayfasinda gecerli Admin Email i doldurur")
     public void kullaniciLoginSayfasindaGecerliAdminEmailIDoldurur() {
        registrierungPage.email_box.sendKeys("admin@zone-edv.de");
+        ReuseableMethods.bekle(1);
 
     }
 
     @And("Kullanici Login sayfasinda gecerli Admin Password u doldurur")
     public void kullaniciLoginSayfasindaGecerliAdminPasswordUDoldurur() {
         registrierungPage.password_box.sendKeys("1");
+        ReuseableMethods.bekle(1);
     }
 
 

@@ -9,12 +9,13 @@ import org.openqa.selenium.WindowType;
 import pages.RegistrierungPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReuseableMethods;
 
 import static utilities.ReuseableMethods.*;
 import static utilities.ReuseableMethods.SifreOlusturucu.generatePassword;
 
 
-public class RegistrierungSeite {
+public class RegistrierungSeite_StepDef {
     RegistrierungPage registrierungPage = new RegistrierungPage();
     Faker faker =new Faker();
     String zonehanndle;
@@ -129,7 +130,11 @@ public class RegistrierungSeite {
     }
     @When("Kullanici Anmelden butonuna tiklar")
     public void kullanici_anmelden_butonuna_tiklar() {
+        ReuseableMethods.bekle(1);
         click(registrierungPage.anmeldenButton);
+        ReuseableMethods.bekle(3);
+
+
 
     }
     @Then("Kullanici Logistik Projesine Hosgeldiniz gorur")
