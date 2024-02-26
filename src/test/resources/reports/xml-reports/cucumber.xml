@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="32.86" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Car_Wash sayfasi Testi" name="Car-Wash" time="32.657">
-<failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with text: leyla
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<testsuite name="Cucumber" time="16.016" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Rma sayfasi Testi" name="Rma Sayfasi" time="15.851">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;status&quot; id=&quot;neue&quot; value=&quot;neue&quot; checked=&quot;&quot;&gt; is not clickable at point (104, 50). Other element would receive the click: &lt;div class=&quot;d-flex align-content-center justify-content-between gap-5 bg-dark w-100 py-3 px-3&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=122.0.2365.52)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: driver.version: unknown">
-<![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: leyla
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [78e2eeaea8ca6a6ff91c2389aeef3ebe, clickElement {id=f.688CEEB1DC745C5C9C158B864062CA32.d.4CE01B0868CA1C3E84BAEB6C7BBDCF52.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61363}, msedge: {msedgedriverVersion: 122.0.2365.52 (dcf246d1e496..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61363/devtoo..., se:cdpVersion: 122.0.2365.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (78e2eeaea8ca6a6ff91c2389aeef3ebe)] -&gt; id: neue]
+Session ID: 78e2eeaea8ca6a6ff91c2389aeef3ebe">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class="form-check-input" type="radio" name="status" id="neue" value="neue" checked=""> is not clickable at point (104, 50). Other element would receive the click: <div class="d-flex align-content-center justify-content-between gap-5 bg-dark w-100 py-3 px-3">...</div>
+  (Session info: MicrosoftEdge=122.0.2365.52)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at stepdef.CarWashSeite_StepDef.kullanici_bir_fahrer_secer(CarWashSeite_StepDef.java:90)
-	at ✽.Kullanici Bir Fahrer secer(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/Car_Wash.feature:13)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [78e2eeaea8ca6a6ff91c2389aeef3ebe, clickElement {id=f.688CEEB1DC745C5C9C158B864062CA32.d.4CE01B0868CA1C3E84BAEB6C7BBDCF52.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61363}, msedge: {msedgedriverVersion: 122.0.2365.52 (dcf246d1e496..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61363/devtoo..., se:cdpVersion: 122.0.2365.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (78e2eeaea8ca6a6ff91c2389aeef3ebe)] -> id: neue]
+Session ID: 78e2eeaea8ca6a6ff91c2389aeef3ebe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at stepdef.RmaSeite_Stepdef.kullanici_neue_radio_butonunu_secer(RmaSeite_Stepdef.java:43)
+	at ✽.Kullanici neue radio butonunu secer(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/RMA.feature:12)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -21,19 +44,24 @@ Given Kullanici login sayfasina gider.......................................pass
 And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
 And Kullanici Login sayfasinda gecerli Admin Password u doldurur............passed
 And Kullanici Anmelden butonuna tiklar......................................passed
-Given Kullanici sol pencereden Car_Washi tiklar.............................passed
-And Kullanici bir Datum secer...............................................passed
-And Kullanici Bir Fahrer secer..............................................failed
-And Kullanici Kennzeichnen secer............................................skipped
-And Reinigung checkbox tan Innenreinigung u secer...........................skipped
-And Reinigung checkbox tan Ofenreinigung u secer............................skipped
-And Reinigung checkbox tan Außenreinigung u secer...........................skipped
-And Kullanici Zahlungsart radiobuttondan keine Zahlung secer................skipped
-And Kullanici Zahlungsart radiobuttondan Kartenzahlung secer................skipped
-And Kullanici Zahlungsart radiobuttondan Barzahlung secer...................skipped
-And Kullanici bir Betrag secer..............................................skipped
-And Kullanici Notiz yazar...................................................skipped
-And Speichern button atiklar................................................skipped
+When Kullanici Rma ikona tiklar.............................................passed
+And Kullanici gesendet radio butonunu secer.................................passed
+And Kullanici Intern radio butonunu secer...................................passed
+And Kullanici neue radio butonunu secer.....................................failed
+And Kullanici guncel tarihi secer...........................................skipped
+And Kullanici rma tarihini secer............................................skipped
+And Kullanici rmaUhrzeit secer..............................................skipped
+And Kullanici dropDown menuden bir Fahrer secer.............................skipped
+And Kullanici dropDown menuden bir Tour secer...............................skipped
+And Kullanici dropDown menuden bir Kundennummer secer.......................skipped
+And Kullanici dropDown menuden bir Kundenname secer.........................skipped
+And Kullanici dropDown menuden bir Kundenstraße secer.......................skipped
+And Kullanici dropDown menuden bir RMA secer................................skipped
+And Kullanici dropDown menuden bir RMANotiz secer...........................skipped
+And Kullanici Rmanotiz2 alanina bir not yazar...............................skipped
+And Kullanici Zwischernspeichern butona tiklar..............................skipped
+And Kullanici Abschließen butona tiklar.....................................skipped
+And Kullanici Laden butona tiklar...........................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

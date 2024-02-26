@@ -47,7 +47,7 @@ public class CarWashSeite_StepDef {
 
     @Given("Kullanici sol pencereden Car_Washi tiklar")
     public void kullanici_sol_pencereden_car_washi_tiklar() {
-        carWashPage.carWashGiris.click();
+        carWashPage.carWashGiris();
         ReuseableMethods.bekle(2);
         ReuseableMethods.scrollToElement(carWashPage.notizCarwash);
 
