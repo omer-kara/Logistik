@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="16.016" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Rma sayfasi Testi" name="Rma Sayfasi" time="15.851">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;status&quot; id=&quot;neue&quot; value=&quot;neue&quot; checked=&quot;&quot;&gt; is not clickable at point (104, 50). Other element would receive the click: &lt;div class=&quot;d-flex align-content-center justify-content-between gap-5 bg-dark w-100 py-3 px-3&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=122.0.2365.52)
+<testsuite name="Cucumber" time="26.428" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Rma sayfasi Testi" name="Rma Sayfasi" time="26.242">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#neue&quot;}
+  (Session info: chrome=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [78e2eeaea8ca6a6ff91c2389aeef3ebe, clickElement {id=f.688CEEB1DC745C5C9C158B864062CA32.d.4CE01B0868CA1C3E84BAEB6C7BBDCF52.e.47}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61363}, msedge: {msedgedriverVersion: 122.0.2365.52 (dcf246d1e496..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61363/devtoo..., se:cdpVersion: 122.0.2365.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (78e2eeaea8ca6a6ff91c2389aeef3ebe)] -&gt; id: neue]
-Session ID: 78e2eeaea8ca6a6ff91c2389aeef3ebe">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class="form-check-input" type="radio" name="status" id="neue" value="neue" checked=""> is not clickable at point (104, 50). Other element would receive the click: <div class="d-flex align-content-center justify-content-between gap-5 bg-dark w-100 py-3 px-3">...</div>
-  (Session info: MicrosoftEdge=122.0.2365.52)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a20c90803f84b3bba3a32704e133eb40, findElement {using=id, value=neue}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65148/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a20c90803f84b3bba3a32704e133eb40">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#neue"}
+  (Session info: chrome=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [78e2eeaea8ca6a6ff91c2389aeef3ebe, clickElement {id=f.688CEEB1DC745C5C9C158B864062CA32.d.4CE01B0868CA1C3E84BAEB6C7BBDCF52.e.47}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61363}, msedge: {msedgedriverVersion: 122.0.2365.52 (dcf246d1e496..., userDataDir: C:\Users\lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61363/devtoo..., se:cdpVersion: 122.0.2365.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (78e2eeaea8ca6a6ff91c2389aeef3ebe)] -> id: neue]
-Session ID: 78e2eeaea8ca6a6ff91c2389aeef3ebe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a20c90803f84b3bba3a32704e133eb40, findElement {using=id, value=neue}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65148/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a20c90803f84b3bba3a32704e133eb40
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -29,14 +29,25 @@ Session ID: 78e2eeaea8ca6a6ff91c2389aeef3ebe
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at stepdef.RmaSeite_Stepdef.kullanici_neue_radio_butonunu_secer(RmaSeite_Stepdef.java:43)
-	at ✽.Kullanici neue radio butonunu secer(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/RMA.feature:12)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
+	at utilities.ReuseableMethods.scrollToElement(ReuseableMethods.java:69)
+	at stepdef.RmaSeite_Stepdef.kullanici_rma_ikona_tiklar(RmaSeite_Stepdef.java:17)
+	at ✽.Kullanici Rma ikona tiklar(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/RMA.feature:9)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -44,10 +55,10 @@ Given Kullanici login sayfasina gider.......................................pass
 And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
 And Kullanici Login sayfasinda gecerli Admin Password u doldurur............passed
 And Kullanici Anmelden butonuna tiklar......................................passed
-When Kullanici Rma ikona tiklar.............................................passed
-And Kullanici gesendet radio butonunu secer.................................passed
-And Kullanici Intern radio butonunu secer...................................passed
-And Kullanici neue radio butonunu secer.....................................failed
+When Kullanici Rma ikona tiklar.............................................failed
+And Kullanici gesendet radio butonunu secer.................................skipped
+And Kullanici Intern radio butonunu secer...................................skipped
+And Kullanici neue radio butonunu secer.....................................skipped
 And Kullanici guncel tarihi secer...........................................skipped
 And Kullanici rma tarihini secer............................................skipped
 And Kullanici rmaUhrzeit secer..............................................skipped
