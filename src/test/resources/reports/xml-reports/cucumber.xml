@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="32.86" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Car_Wash sayfasi Testi" name="Car-Wash" time="32.657">
-<failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with text: leyla
+<testsuite name="Cucumber" time="26.428" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Rma sayfasi Testi" name="Rma Sayfasi" time="26.242">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#neue&quot;}
+  (Session info: chrome=122.0.6261.70)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: driver.version: unknown">
-<![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: leyla
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a20c90803f84b3bba3a32704e133eb40, findElement {using=id, value=neue}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65148/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a20c90803f84b3bba3a32704e133eb40">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#neue"}
+  (Session info: chrome=122.0.6261.70)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at stepdef.CarWashSeite_StepDef.kullanici_bir_fahrer_secer(CarWashSeite_StepDef.java:90)
-	at ✽.Kullanici Bir Fahrer secer(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/Car_Wash.feature:13)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a20c90803f84b3bba3a32704e133eb40, findElement {using=id, value=neue}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65148/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a20c90803f84b3bba3a32704e133eb40
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
+	at utilities.ReuseableMethods.scrollToElement(ReuseableMethods.java:69)
+	at stepdef.RmaSeite_Stepdef.kullanici_rma_ikona_tiklar(RmaSeite_Stepdef.java:17)
+	at ✽.Kullanici Rma ikona tiklar(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/RMA.feature:9)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -21,19 +55,24 @@ Given Kullanici login sayfasina gider.......................................pass
 And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
 And Kullanici Login sayfasinda gecerli Admin Password u doldurur............passed
 And Kullanici Anmelden butonuna tiklar......................................passed
-Given Kullanici sol pencereden Car_Washi tiklar.............................passed
-And Kullanici bir Datum secer...............................................passed
-And Kullanici Bir Fahrer secer..............................................failed
-And Kullanici Kennzeichnen secer............................................skipped
-And Reinigung checkbox tan Innenreinigung u secer...........................skipped
-And Reinigung checkbox tan Ofenreinigung u secer............................skipped
-And Reinigung checkbox tan Außenreinigung u secer...........................skipped
-And Kullanici Zahlungsart radiobuttondan keine Zahlung secer................skipped
-And Kullanici Zahlungsart radiobuttondan Kartenzahlung secer................skipped
-And Kullanici Zahlungsart radiobuttondan Barzahlung secer...................skipped
-And Kullanici bir Betrag secer..............................................skipped
-And Kullanici Notiz yazar...................................................skipped
-And Speichern button atiklar................................................skipped
+When Kullanici Rma ikona tiklar.............................................failed
+And Kullanici gesendet radio butonunu secer.................................skipped
+And Kullanici Intern radio butonunu secer...................................skipped
+And Kullanici neue radio butonunu secer.....................................skipped
+And Kullanici guncel tarihi secer...........................................skipped
+And Kullanici rma tarihini secer............................................skipped
+And Kullanici rmaUhrzeit secer..............................................skipped
+And Kullanici dropDown menuden bir Fahrer secer.............................skipped
+And Kullanici dropDown menuden bir Tour secer...............................skipped
+And Kullanici dropDown menuden bir Kundennummer secer.......................skipped
+And Kullanici dropDown menuden bir Kundenname secer.........................skipped
+And Kullanici dropDown menuden bir Kundenstraße secer.......................skipped
+And Kullanici dropDown menuden bir RMA secer................................skipped
+And Kullanici dropDown menuden bir RMANotiz secer...........................skipped
+And Kullanici Rmanotiz2 alanina bir not yazar...............................skipped
+And Kullanici Zwischernspeichern butona tiklar..............................skipped
+And Kullanici Abschließen butona tiklar.....................................skipped
+And Kullanici Laden butona tiklar...........................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -4,11 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+import utilities.ReuseableMethods;
 
-public class RmaPage {
-    public RmaPage(){PageFactory.initElements(Driver.getDriver(),this);
+public class RmaPage extends BasePage{
 
-    }
     @FindBy(xpath = "(//span[@class='me-3'])[3]")
     public WebElement rmaIkon;
 
@@ -34,7 +33,7 @@ public class RmaPage {
     public WebElement rmaFahrerDD;
 
     @FindBy(id="tourId")
-    public WebElement rmaTour;
+    public WebElement rmaTourDD;
 
     @FindBy(id="kundennummer")
     public WebElement rmaKundenNummer;
@@ -62,6 +61,9 @@ public class RmaPage {
 
     @FindBy(xpath = "//*[text()='Laden']")
     public WebElement rmaLadenButton;
+
+
+
 
 
 

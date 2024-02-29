@@ -5,12 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class TagesTourPage {
+public class TagesTourPage extends BasePage {
 
-    public TagesTourPage() {
-         PageFactory.initElements(Driver.getDriver(), this);
 
-        }
 
         //@FindBy (xpath = "(//*[@class='fs-5 fw-bolder text-white'])[1]")
         //public WebElement tagesTourAnaMenu;

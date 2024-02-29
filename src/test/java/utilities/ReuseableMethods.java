@@ -9,13 +9,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.security.SecureRandom;
+import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Random;
+import java.time.LocalTime;
+import java.util.*;
 
 
 public class ReuseableMethods {
@@ -32,7 +31,7 @@ public class ReuseableMethods {
 
     public static String eskiTarihiGetir() {
         Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.MONTH, -1); // 1 ay öncesini almak için
+        cal.add(Calendar.DAY_OF_YEAR, -1); // 1 gün öncesini almak için
 
         DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
         return df.format(cal.getTime());
@@ -51,6 +50,11 @@ public class ReuseableMethods {
         DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
         return df.format(cal.getTime());
     }
+
+    public static LocalTime guncelSaatiGetir() {
+        return LocalTime.now();
+    }
+
 
     //istenilen uzunlukta bir şifre üret
     public static String generatetPassword(int length) {
