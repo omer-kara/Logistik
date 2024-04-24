@@ -2,10 +2,17 @@ package stepdef;
 
 import io.cucumber.java.en.Given;
 
+import io.cucumber.java.en.Then;
+
+import org.apache.poi.ss.usermodel.*;
+import pages.RegistrierungPage;
 import pages.TagesTourPage;
 import utilities.ReuseableMethods;
 
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class TagesTour_StepDef {
 

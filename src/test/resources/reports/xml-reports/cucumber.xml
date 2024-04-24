@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="45.388" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Ausgaben sayfasi Testi" name="Ausgaben" time="45.166">
 <<<<<<< HEAD
 <testsuite name="Cucumber" time="3.686" tests="1" skipped="0" failures="1" errors="0">
 <testcase classname="TagesTour Testi" name="TagesTour" time="3.442">
@@ -137,54 +139,19 @@ Given Kullanici login sayfasina gider.......................................pass
 And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
 And Kullanici Login sayfasinda gecerli Admin Password u doldurur............passed
 And Kullanici Anmelden butonuna tiklar......................................passed
-<<<<<<< HEAD
-Given Kullanici TagesTour ikonuna tiklar....................................failed
-And Kullanici DateiAuswählen butonuna tiklar................................skipped
-And Kullanici kayitli excel tablosunu yükler................................skipped
-And Kullanici DateiEinlesen butona tiklar...................................skipped
-And Kullanici Hochladen butona tiklar.......................................skipped
-And Kullanici tablodan Ankunft altindaki ilk tik isaretine tiklar...........skipped
-And Kullanici acilan tabloda secim yapar1...................................skipped
-And Kullanici Speichern buttona tiklar1.....................................skipped
-Then Kullanici Status altinda "Lieferung erfolgreich, keine Besonderheiten" yazisinin görüldügünü dogrular.skipped
-And Kullanici tablodan Ankunft altindaki ikinci tik isaretine tiklar........skipped
-And Kullanici acilan tabloda secim yapar2...................................skipped
-And Kullanici Speichern buttona tiklar2.....................................skipped
-Then Kullanici "Lieferung erfolgreich, Menü vor Wohnungstür abgestellt" yazisinin görüldügünü dogrular.skipped
-And Kullanici tablodan Ankunft altindaki ilk ucuncu isaretine tiklar........skipped
-And Kullanici acilan tabloda secim yapar3...................................skipped
-And Kullanici Speichern buttona tiklar3.....................................skipped
-Then Kullanici "Lieferung nicht erfolgreich, Annahme verweigert" yazisinin görüldügünü dogrular.skipped
-And Kullanici tablodan Ankunft altindaki ilk dördüncü isaretine tiklar......skipped
-And Kullanici acilan tabloda secim yapar4...................................skipped
-And Kullanici Speichern buttona tiklar4.....................................skipped
-Then Kullanici "Lieferung nicht erfolgreich, TG nicht persönlich angetroffen" yazisinin görüldügünü dogrular.skipped
-And Kullanici tablodan Ankunft altindaki besinci tik isaretine tiklar.......skipped
-And Kullanici acilan tabloda secim yapar5...................................skipped
-And Kullanici Speichern buttona tiklar5.....................................skipped
-Then Kullanici "TG gesundheitlich beeinträchtigt, Notfall" yazisinin görüldügünü dogrular.skipped
-And Kullanici Zum Ziel den haritayi görmek icin navigasyon ikonuna tiklar...skipped
-And Kullanici haritada teslimat yerinin görüldügünü Straße bilgisi ile dogrular.skipped
-=======
-When Kullanici Rma ikona tiklar.............................................failed
-And Kullanici gesendet radio butonunu secer.................................skipped
-And Kullanici Intern radio butonunu secer...................................skipped
-And Kullanici neue radio butonunu secer.....................................skipped
-And Kullanici guncel tarihi secer...........................................skipped
-And Kullanici rma tarihini secer............................................skipped
-And Kullanici rmaUhrzeit secer..............................................skipped
-And Kullanici dropDown menuden bir Fahrer secer.............................skipped
-And Kullanici dropDown menuden bir Tour secer...............................skipped
-And Kullanici dropDown menuden bir Kundennummer secer.......................skipped
-And Kullanici dropDown menuden bir Kundenname secer.........................skipped
-And Kullanici dropDown menuden bir Kundenstraße secer.......................skipped
-And Kullanici dropDown menuden bir RMA secer................................skipped
-And Kullanici dropDown menuden bir RMANotiz secer...........................skipped
-And Kullanici Rmanotiz2 alanina bir not yazar...............................skipped
-And Kullanici Zwischernspeichern butona tiklar..............................skipped
-And Kullanici Abschließen butona tiklar.....................................skipped
-And Kullanici Laden butona tiklar...........................................skipped
->>>>>>> master
+Given Kullanici sol pencereden Ausgaben tiklar..............................passed
+And Kullanici bir Datum1 secer..............................................passed
+And Kullanici bir Datum2 secer..............................................passed
+And Kullanici Zahlungsart auswahlen secer...................................passed
+And Kullanici Bennunnung secer..............................................passed
+And Kullanici Ausgabenart auswahlen secer...................................passed
+And Kullanici Verwendungsweck eingeben secer................................passed
+And Kullanici Fahrzeug secer................................................passed
+And Kullanici Telefone secer................................................passed
+And Kullanici Volumen secer.................................................passed
+And Kullanici Uhrzeit secer.................................................passed
+And Kullanici Belegbetragnetto yazar........................................passed
+And Kullanici Eingeben a tiklar.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
