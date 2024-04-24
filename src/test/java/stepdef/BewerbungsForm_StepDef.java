@@ -56,7 +56,7 @@ public class BewerbungsForm_StepDef {
     }
     @When("PLZ alanina giris yapar")
     public void plz_alanina_giris_yapar() {
-        bewerbungsFormPage..sendKeys("TestNachname");
+//        bewerbungsFormPage.sendKeys("TestNachname");
         ReuseableMethods.bekle(1);
 
     }

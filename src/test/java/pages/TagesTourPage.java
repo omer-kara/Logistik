@@ -1,3 +1,4 @@
+
 package pages;
 
 import org.openqa.selenium.WebElement;
@@ -40,3 +41,4 @@ public class TagesTourPage extends BasePage {
         public WebElement tagesTourTGGesundheitlich;
 
     }
+

@@ -1,11 +1,14 @@
 package stepdef;
 
 import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
+
 import org.apache.poi.ss.usermodel.*;
 import pages.RegistrierungPage;
 import pages.TagesTourPage;
 import utilities.ReuseableMethods;
+
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -23,11 +26,13 @@ public class TagesTour_StepDef {
 
     }
 //    @Given("Kullanici DateiAuswählen butonuna tiklar")
+
 //    public void kullanici_datei_auswählen_butonuna_tiklar() {
 //        tagesTourPage.tagesTourdateiAuswählen.click();
 //
 //    }
 //    @Given("Kullanici kayitli excel tablosunu yükler")
+
 //    public void kullanici_kayitli_excel_tablosunu_yükler() throws IOException {
 //
 //       String dosyaYolu="src/test/java/resources/testkunden.xlsx";
@@ -43,11 +48,13 @@ public class TagesTour_StepDef {
 
 
    // }
+
 //    @Given("Kullanici DateiEinlesen butona tiklar")
 //    public void kullanici_datei_einlesen_butona_tiklar() {
 //        tagesTourPage.tagesTourDateiEinlesen.click();
 //    }
 //    @Given("Kullanici Hochladen butona tiklar")
+
 //    public void kullanici_hochladen_butona_tiklar() {
 //        tagesTourPage.tagesTourHochladenButton.click();
 
@@ -129,6 +136,7 @@ public class TagesTour_StepDef {
 //    @Then("Kullanici haritada teslimat yerinin görüldügünü Straße bilgisi ile dogrular")
 //    public void kullanici_haritada_teslimat_yerinin_görüldügünü_straße_bilgisi_ile_dogrular() {
 //
+
 //    }
 
 

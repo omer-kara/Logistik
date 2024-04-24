@@ -2,13 +2,15 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import utilities.Driver;
+
+
 
 public class CarWashPage extends BasePage {
 
 
+
     @FindBy (xpath = "(//a[@class='nav-link'])[4]")
+
     public WebElement carWashGiris;
 
     @FindBy (id="dbdatum")
@@ -45,11 +47,4 @@ public class CarWashPage extends BasePage {
 
     @FindBy (xpath = "//*[text()='Submit']")
     public WebElement submitCarwash;
-
-    public void carWashGiris(){
-        carWashGiris.click();
-
-    }
 }
-
-

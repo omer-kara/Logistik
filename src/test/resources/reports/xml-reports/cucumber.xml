@@ -1,4 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="45.388" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Ausgaben sayfasi Testi" name="Ausgaben" time="45.166">
+<<<<<<< HEAD
+<testsuite name="Cucumber" time="3.686" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="TagesTour Testi" name="TagesTour" time="3.442">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdef.TagesTour_StepDef">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdef.TagesTour_StepDef
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 46 more
+Caused by: org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.<init>(By.java:309)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:42)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:83)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
+	at pages.TagesTourPage.<init>(TagesTourPage.java:23)
+	at stepdef.TagesTour_StepDef.<init>(TagesTour_StepDef.java:17)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	... 49 more
+=======
 <testsuite name="Cucumber" time="26.428" tests="1" skipped="0" failures="1" errors="0">
 <testcase classname="Rma sayfasi Testi" name="Rma Sayfasi" time="26.242">
 <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#neue&quot;}
@@ -48,6 +131,7 @@ Session ID: a20c90803f84b3bba3a32704e133eb40
 	at utilities.ReuseableMethods.scrollToElement(ReuseableMethods.java:69)
 	at stepdef.RmaSeite_Stepdef.kullanici_rma_ikona_tiklar(RmaSeite_Stepdef.java:17)
 	at ✽.Kullanici Rma ikona tiklar(file:///C:/Users/lenovo/IdeaProjects/Logistik/src/test/resources/features/RMA.feature:9)
+>>>>>>> master
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -55,24 +139,19 @@ Given Kullanici login sayfasina gider.......................................pass
 And Kullanici Login sayfasinda gecerli Admin Email i doldurur...............passed
 And Kullanici Login sayfasinda gecerli Admin Password u doldurur............passed
 And Kullanici Anmelden butonuna tiklar......................................passed
-When Kullanici Rma ikona tiklar.............................................failed
-And Kullanici gesendet radio butonunu secer.................................skipped
-And Kullanici Intern radio butonunu secer...................................skipped
-And Kullanici neue radio butonunu secer.....................................skipped
-And Kullanici guncel tarihi secer...........................................skipped
-And Kullanici rma tarihini secer............................................skipped
-And Kullanici rmaUhrzeit secer..............................................skipped
-And Kullanici dropDown menuden bir Fahrer secer.............................skipped
-And Kullanici dropDown menuden bir Tour secer...............................skipped
-And Kullanici dropDown menuden bir Kundennummer secer.......................skipped
-And Kullanici dropDown menuden bir Kundenname secer.........................skipped
-And Kullanici dropDown menuden bir Kundenstraße secer.......................skipped
-And Kullanici dropDown menuden bir RMA secer................................skipped
-And Kullanici dropDown menuden bir RMANotiz secer...........................skipped
-And Kullanici Rmanotiz2 alanina bir not yazar...............................skipped
-And Kullanici Zwischernspeichern butona tiklar..............................skipped
-And Kullanici Abschließen butona tiklar.....................................skipped
-And Kullanici Laden butona tiklar...........................................skipped
+Given Kullanici sol pencereden Ausgaben tiklar..............................passed
+And Kullanici bir Datum1 secer..............................................passed
+And Kullanici bir Datum2 secer..............................................passed
+And Kullanici Zahlungsart auswahlen secer...................................passed
+And Kullanici Bennunnung secer..............................................passed
+And Kullanici Ausgabenart auswahlen secer...................................passed
+And Kullanici Verwendungsweck eingeben secer................................passed
+And Kullanici Fahrzeug secer................................................passed
+And Kullanici Telefone secer................................................passed
+And Kullanici Volumen secer.................................................passed
+And Kullanici Uhrzeit secer.................................................passed
+And Kullanici Belegbetragnetto yazar........................................passed
+And Kullanici Eingeben a tiklar.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
