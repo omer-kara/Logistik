@@ -5,10 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class RegistrierungPage {
-    public RegistrierungPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+public class RegistrierungPage extends BasePage {
+
 
 
     @FindBy (xpath = "(//*[@class='link-secondary text-decoration-none'])[1]")

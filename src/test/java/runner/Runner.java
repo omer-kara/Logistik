@@ -20,7 +20,9 @@ import org.junit.runner.RunWith;
 
 
 
-        tags = "@tagesTour",
+
+        tags = "@reklamation",
+
 
 
 

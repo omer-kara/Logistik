@@ -5,9 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class CarWashPage {
 
-   public CarWashPage(){ PageFactory.initElements(Driver.getDriver(),this);}
+public class CarWashPage extends BasePage {
+
+
 
     @FindBy (xpath = "(//a[@class='nav-link'])[4]")
 
@@ -47,4 +48,11 @@ public class CarWashPage {
 
     @FindBy (xpath = "//*[text()='Submit']")
     public WebElement submitCarwash;
+
+    public void carWashGiris(){
+        carWashGiris.click();
+
+    }
 }
+
+
